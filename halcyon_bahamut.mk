@@ -21,12 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device.mk
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Halcyon stuff.
+$(call inherit-product, vendor/halcyon/config/common.mk)
 
 IS_PHONE := true
 
-PRODUCT_NAME := lineage_bahamut
+PRODUCT_NAME := halcyon_bahamut
 PRODUCT_DEVICE := bahamut
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_BRAND := Sony
